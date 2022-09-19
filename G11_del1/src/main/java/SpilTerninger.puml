@@ -1,22 +1,25 @@
 @startuml
 'https://plantuml.com/use-case-diagram
 
-:Main Admin: as Admin
-(Spil Terninger) as (Use)
+agent Terning
+:Spil System: as Game
+:Point System: as Points
 
-User -> (Start)
-User --> (Use)
 
-Admin ---> (Use)
+User --> (Opret Spillerer)
+User --> (Resultat Vises)
+User --> (Kast Terninger)
 
-note right of Admin : This is an example.
+Terning --> (Kast Terninger)
+Terning --> (Resultat Vises)
 
-note right of (Use)
-A note can also
-be on several lines
-end note
+Game --> (Opret Spillerer)
+Game --> (Vise Ny Score)
+Game --> (Udråbe Vinder)
 
-note "This note is connected\nto several objects." as N2
-(Start) .. N2
-N2 .. (Use)
+Points --> (Resultat Vises)
+Points --> (Udregne Ny Score)
+
+
+
 @enduml
