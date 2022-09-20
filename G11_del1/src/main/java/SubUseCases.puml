@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+actor User
+agent Terning
+agent SpilSystem
+agent PointSystem
+
+
+rectangle "Terning Spil" {
+User --> (Opret Spillerer)
+User --> (Resultat Vises)
+User --> (Kast Terninger)
+
+Terning --> (Kast Terninger)
+Terning --> (Resultat Vises)
+
+SpilSystem --> (Opret Spillerer)
+SpilSystem --> (Vise Ny Score)
+SpilSystem --> (Udråbe Vinder)
+
+PointSystem --> (Resultat Vises)
+PointSystem --> (Udregne Ny Score)
+}
+
+
+
+
+@enduml
