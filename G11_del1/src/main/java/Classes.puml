@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Die {
+Type or amount of sides
+}
+Die : roll()
+class Player{
+Name
+Score
+}
+class DieCup {
+amount of dice
+}
+DieCup : ThrowDice()
+class PointSystem {
+ScoreCalculation
+}
+class GameController {
+instantiate other classes
+}
+
+
+
+
+GameController -- DieCup
+Die -- DieCup
+Player ---- DieCup
+Player --GameController
+Player -- PointSystem
+PointSystem -- GameController
+PointSystem -- DieCup
+
+@enduml
