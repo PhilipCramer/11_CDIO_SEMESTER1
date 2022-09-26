@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor User
+participant Game
+
+User -> Game: kaster terninger
+Game -> User: Viser resultat
+Game -> Game: Opdaterer Point
+Game -> User: Viser ny Score
+
+@enduml
