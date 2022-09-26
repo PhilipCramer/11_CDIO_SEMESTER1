@@ -1,5 +1,3 @@
-package G11_del1.src.main.java;
-
 public class PointSystem {
     public PointSystem (String P1Name, String P2Name){
 
