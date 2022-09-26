@@ -13,6 +13,8 @@ Score
 }
 Player : setPlayerScore()
 Player : getPlayerScore()
+Player : setPlayerName()
+Player : getPlayerName()
 
 class DieCup {
 amount of dice
