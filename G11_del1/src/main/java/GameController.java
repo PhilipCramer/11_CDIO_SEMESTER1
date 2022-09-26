@@ -3,6 +3,6 @@ public class GameController {
 
         Player p1 = new Player();
         Player p2 = new Player();
-        GUI gui = new GUI(p1,p2);
+        GUI gui = new GUI();
     }
 }
