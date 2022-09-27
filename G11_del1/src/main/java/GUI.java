@@ -76,8 +76,12 @@ public class GUI {
                 p3Points.setVisible(false);
                 p4Points.setVisible(false);
 
-                startGame.setVisible(true);
                 rollButton.setVisible(false);
+                playerTurn.setVisible(false);
+                playerThrow.setVisible(false);
+                terning1.setVisible(false);
+                terning2.setVisible(false);
+                startGame.setVisible(true);
             }
         });
 

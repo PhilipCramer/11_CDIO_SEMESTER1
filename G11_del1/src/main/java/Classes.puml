@@ -32,8 +32,10 @@ PointSystem
 }
 GameController : main()
 
+class GUI
 
 
+GameController -- GUI
 GameController -- DieCup
 Die -- DieCup
 Player --PointSystem
