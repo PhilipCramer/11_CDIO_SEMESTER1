@@ -25,10 +25,11 @@ public class PointSystem {
         }
         return "Ny score for " + player.getPlayerName() + " opdateret til " + player.getPlayerScore();
     }
-    public String winnerCheck(Player player){
+    public boolean winnerCheck(Player player){
         if (player.getPlayerScore() >= WinnerPoint){
-        return player.getPlayerName() + " har vundet med " + player.getPlayerScore() + " point";
+        return true;
        }
+        return false;
     }
 }
 
