@@ -1,13 +1,15 @@
-package G11_del1.src.main.java;
-
+class DiceInCup {
+    DiceInCup() {
+        int Die1;
+        int Die2;
+        Die1 = new Dice();
+        Die2 = new Dice();
+    }
+}
 public class DieCup {
-    public static int[] ThrowDice(int DieCount) {
-        int DiceArray[] = new int[DieCount];
+    public static Object ThrowDice() {
+        DiceInCup Cup = new DiceInCup();
 
-        for (int i = 0; i < DieCount; i++) {
-            DiceArray[i] = new Dice();
-        }
-
-        return DiceArray;
+        return Cup;
     }
 }
