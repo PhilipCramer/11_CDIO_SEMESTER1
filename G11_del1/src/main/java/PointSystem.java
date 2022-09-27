@@ -1,7 +1,7 @@
 public class PointSystem {
     private Player P1;
     private Player P2;
-    private int WinnerPoint = 60;
+    private int WinnerPoint = 40;
     public PointSystem (String P1Name, String P2Name){
 
         Player P1 = new Player();
