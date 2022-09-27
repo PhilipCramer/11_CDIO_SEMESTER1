@@ -1,15 +1,14 @@
-class DiceInCup {
-    DiceInCup() {
-        int Die1;
-        int Die2;
-        Die1 = new Dice();
-        Die2 = new Dice();
-    }
-}
 public class DieCup {
-    public static Object ThrowDice() {
-        DiceInCup Cup = new DiceInCup();
+    private static int[] DiceArray;
+    DieCup(int DieCount) {
+        DiceArray = new int[DieCount];
+    }
+    public static int[] ThrowDice(int DieCount) {
+        DieCup Cup = new DieCup(DieCount);
+        for (int i = 0; i < DieCount; i++) {
+            Cup.DiceArray[i] = new Dice();
+        }
 
-        return Cup;
+        return Cup.DiceArray;
     }
 }
