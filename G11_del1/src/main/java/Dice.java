@@ -2,8 +2,8 @@ import java.util.Random;
 //Her bliver der importeret javas random funktion
 public class Dice{
 
-    private static int Dievalue;
-    public static int Dice(){
+    private int Dievalue;
+    public int Dice(){
         Random randomObj = new Random();
         Dievalue = randomObj.nextInt(6) + 1;
         return Dievalue;
