@@ -29,17 +29,18 @@ public class GameController {
                 System.out.println(player2.getPlayerName() + " har turen. tryk enter for at kaste terningerne:");
                 userInput.nextLine();
                 playerThrow = dieCup.throwDice(2);
+                System.out.println(player2.getPlayerName() + " har slået " + playerThrow[0] + " og " + playerThrow[1]);
                 pointSystem.setScore(player2, playerThrow[0], playerThrow[1] );
 
             }else { //Spiller 1 har turen
                 System.out.println(player1.getPlayerName() + " har turen. tryk enter for at kaste terningerne:");
                 userInput.nextLine();
                 playerThrow = dieCup.throwDice(2);
+                System.out.println(player1.getPlayerName() + " har slået " + playerThrow[0] + " og " + playerThrow[1]);
                 pointSystem.setScore(player1, playerThrow[0], playerThrow[1]);
             }
-            //Renser konsollen.
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
+            //Printer en blank linje til at adskille resultater.
+            System.out.println();
 
             //Opdaterer turnCount
             turnCount++;
