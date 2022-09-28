@@ -39,8 +39,8 @@ public class GameController {
                 System.out.println(player1.getPlayerName() + " har slået " + playerThrow[0] + " og " + playerThrow[1]);
                 pointSystem.setScore(player1, playerThrow[0], playerThrow[1]);
             }
-            //Renser konsollen.
-            System.out.println("\f");
+            //Printer en blank linje til at adskille resultater.
+            System.out.println();
 
             //Opdaterer turnCount
             turnCount++;
