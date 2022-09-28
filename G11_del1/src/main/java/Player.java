@@ -1,10 +1,10 @@
 public class Player {
     private String name;
-    private int score;
-    public Player(){
-        String name;
-        Integer score;
+    private Integer score;
 
+    public Player(){
+
+        score = 0;
     }
     public void setPlayerName(String String){
         name = String;
