@@ -1,15 +1,7 @@
 public class PointSystem {
-    private Player P1;
-    private Player P2;
     private int WinnerPoint = 40;
-    public PointSystem (String P1Name, String P2Name){
+    public PointSystem (Player P1, Player P2){
 
-        Player P1 = new Player();
-        Player P2 = new Player();
-        P1.setPlayerName(P1Name);
-        P2.setPlayerName(P2Name);
-        P1.setPlayerScore(0);
-        P2.setPlayerScore(0);
         }
     public String newScore(Player player, int Dice1, int Dice2){
         if(player.getPlayerName().equals(P1.getPlayerName())){
