@@ -4,18 +4,12 @@ public class PointSystem {
     public PointSystem (Player P1, Player P2){
     }
 
-    public Boolean setScore(Player player, int Dice1, int Dice2){
+    public int setScore(Player player, int Dice1, int Dice2){
         int diceSum = Dice1 + Dice2;
         int newPlayerScore = player.getPlayerScore() + diceSum;
         player.setPlayerScore(newPlayerScore);
 
-        return winnerCheck(player.getPlayerScore());
-    }
-    public boolean winnerCheck(int points){
-        if (points >= WinnerPoint){
-            return true;
-        }
-        return false;
+        return (player.getPlayerScore());
     }
 }
 
