@@ -1,11 +1,11 @@
 public class DieCup {
-    private static int[] DiceArray;
+    private int[] DiceArray;
     //En contructer, der laver et array af tal.
     DieCup(int DieCount) {
         DiceArray = new int[DieCount];
     }
     //En metode der "kaster" terningerne.
-    public static int[] ThrowDice(int DieCount) {
+    public int[] throwDice(int DieCount) {
         //Tilgiver "Cup" et array af en given længde fra contructeren.
         DieCup Cup = new DieCup(DieCount);
         //Laver en variable (generateDie) der er en ny Dice klasse.
