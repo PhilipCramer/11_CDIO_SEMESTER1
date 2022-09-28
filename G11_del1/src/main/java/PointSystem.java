@@ -11,5 +11,11 @@ public class PointSystem {
 
         return (player.getPlayerScore());
     }
+    public boolean winnerCheck(int points){
+        if (points >= WinnerPoint){
+            return true;
+        }
+        return false;
+    }
 }
 
