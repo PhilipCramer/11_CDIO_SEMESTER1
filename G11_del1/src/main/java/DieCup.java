@@ -5,8 +5,9 @@ public class DieCup {
     }
     public static int[] ThrowDice(int DieCount) {
         DieCup Cup = new DieCup(DieCount);
+        Dice generateDie = new Dice();
         for (int i = 0; i < DieCount; i++) {
-            Cup.DiceArray[i] = new Dice();
+            Cup.DiceArray[i] = generateDie.Dice();
         }
 
         return Cup.DiceArray;
