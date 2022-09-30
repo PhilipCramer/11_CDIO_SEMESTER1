@@ -2,10 +2,10 @@
 'https://plantuml.com/class-diagram
 left to right direction
 
-class Die {
+class Dice {
 Type or amount of sides
 }
-Die : roll()
+Dice : roll()
 
 class Player{
 Name
@@ -35,7 +35,7 @@ GameController : main()
 
 
 GameController -- DieCup
-Die -- DieCup
+Dice -- DieCup
 Player --PointSystem
 PointSystem -- GameController
 
